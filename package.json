@@ -1,0 +1,15 @@
+{
+  "name": "discord-vibe-check",
+  "version": "1.0.0",
+  "description": "A discord bot that will check the vibe of messages using sentiment analysis",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "Braden C",
+  "license": "ISC"
+}

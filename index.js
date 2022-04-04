@@ -7,10 +7,8 @@ config();
 const sentiment = new Sentiment();
 
 const {
-    token
+    TOKEN
 } = process.env;
-
-console.log(process.env);
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
@@ -36,4 +34,4 @@ client.on("messageCreate", async message => {
 });
 
 // Login to Discord with your client's token
-client.login(token);
+client.login(TOKEN);

@@ -23,6 +23,8 @@ client.on("messageCreate", async message => {
     if (Array.from(message.mentions.users.keys()).includes(client.user.id)) {
         const repliedTo = await message.channel.messages.fetch(message.reference.messageId);
         const sentVal = sentiment.analyze(repliedTo.content);
+
+        // Different vibes
         if (sentVal.comparative > 0)
             return message.reply('Good vibes detected 🤖');
         if (sentVal.comparative < 0)
